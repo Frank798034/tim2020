@@ -1,3 +1,4 @@
-main {
-    background-color: royalblue;
+.site-main {
+    $color: orangered;
+    background-color: $color;
 }
