@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-15 14:41:40+0000\n"
+"PO-Revision-Date: 2020-09-16 14:06:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -6210,11 +6210,6 @@ msgstr "Vous avez choisi de supprimer les utilisateurs suivants de tous les rés
 msgid "Warning! User cannot be deleted. The user %s is a network administrator."
 msgstr "Attention&nbsp;! L&rsquo;utilisateur ne peut pas être supprimé. L&rsquo;utilsateur %s est administrateur du réseau."
 
-#. translators: %s: User login.
-#: wp-admin/includes/ms.php:885
-msgid "Warning! User %s cannot be deleted."
-msgstr "Attention&nbsp;! L&rsquo;utilisateur %s ne peut pas être supprimé."
-
 #: wp-admin/includes/ms.php:862
 msgid "You have chosen to delete the user from all networks and sites."
 msgstr "Vous avez choisi de supprimer l&rsquo;utilisateur de tous les réseaux et sites."
@@ -6222,6 +6217,11 @@ msgstr "Vous avez choisi de supprimer l&rsquo;utilisateur de tous les réseaux e
 #: wp-admin/includes/media.php:984
 msgid "Invalid image URL."
 msgstr "Adresse web non valide pour l’image."
+
+#. translators: %s: User login.
+#: wp-admin/includes/ms.php:885
+msgid "Warning! User %s cannot be deleted."
+msgstr "Avertissement ! L’utilisateur %s ne peut pas être supprimé."
 
 #: wp-admin/includes/class-wp-screen.php:1271
 msgid "Pagination"
@@ -6270,11 +6270,6 @@ msgctxt "no user roles"
 msgid "None"
 msgstr "Aucun"
 
-#. translators: 1: Title of an update, 2: Error message.
-#: wp-admin/includes/class-bulk-upgrader-skin.php:43
-msgid "An error occurred while updating %1$s: %2$s"
-msgstr "Une erreur est survenue lors de la mise à jour de %1$s&nbsp; %2$s"
-
 #: wp-admin/includes/class-wp-screen.php:1116
 msgid "Boxes"
 msgstr "Boîtes"
@@ -6282,6 +6277,11 @@ msgstr "Boîtes"
 #: wp-admin/includes/class-wp-screen.php:1324
 msgid "View mode"
 msgstr "Mode d’affichage"
+
+#. translators: 1: Title of an update, 2: Error message.
+#: wp-admin/includes/class-bulk-upgrader-skin.php:43
+msgid "An error occurred while updating %1$s: %2$s"
+msgstr "Une erreur est survenue lors de la mise à jour de %1$s : %2$s"
 
 #. translators: %s: Number of comments.
 #: wp-admin/includes/class-wp-comments-list-table.php:240
@@ -6349,14 +6349,14 @@ msgid_plural "Trash <span class=\"count\">(%s)</span>"
 msgstr[0] "Mis à la corbeille <span class=\"count\">(%s)</span>"
 msgstr[1] "Mis à la corbeille <span class=\"count\">(%s)</span>"
 
-#: wp-admin/export.php:214 wp-admin/export.php:261 wp-admin/export.php:301
-msgid "End date:"
-msgstr "Date de fin&nbsp;:"
-
 #: wp-admin/includes/class-wp-comments-list-table.php:462
 msgctxt "column name"
 msgid "Submitted on"
 msgstr "Envoyé le"
+
+#: wp-admin/export.php:214 wp-admin/export.php:261 wp-admin/export.php:301
+msgid "End date:"
+msgstr "Date de fin :"
 
 #: wp-admin/export.php:178
 msgid "Content to export"
@@ -6374,7 +6374,7 @@ msgstr "Envoyé le&nbsp;: %s"
 #: wp-admin/edit-form-comment.php:32
 msgctxt "comment"
 msgid "Permalink:"
-msgstr "Permalien&nbsp;:"
+msgstr "Permalien :"
 
 #. translators: %s: Scheduled date for the page.
 #: wp-admin/edit-form-advanced.php:205
@@ -6460,7 +6460,7 @@ msgstr "Le thème actuel ne permet pas de téléverser une image d’en-tête pe
 
 #: wp-admin/includes/user.php:525
 msgid "You&rsquo;re using the auto-generated password for your account. Would you like to change it?"
-msgstr "Vous utilisez le mot de passe auto-généré pour votre compte. Voulez-vous le changer&nbsp;?"
+msgstr "Vous utilisez le mot de passe auto-généré pour votre compte. Voulez-vous le changer ?"
 
 #: wp-admin/users.php:419
 msgid "You have specified this user for removal:"
@@ -6593,7 +6593,7 @@ msgstr "Date et heure"
 #. translators: %s: Post link.
 #: wp-admin/edit-form-comment.php:160
 msgid "In response to: %s"
-msgstr "En réponse à&nbsp;: %s"
+msgstr "En réponse à : %s"
 
 #: wp-admin/edit-form-advanced.php:360
 msgid "You can also embed media from many popular websites including Twitter, YouTube, Flickr and others by pasting the media URL on its own line into the content of your post/page. <a href=\"https://wordpress.org/support/article/embeds/\">Learn more about embeds</a>."
@@ -6638,16 +6638,11 @@ msgstr "L&rsquo;<a href=\"http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res
 
 #: wp-admin/includes/file.php:2204
 msgid "example: www.wordpress.org"
-msgstr "exemple&nbsp;: www.wordpress.org"
+msgstr "exemple : www.wordpress.org"
 
 #: wp-admin/theme-install.php:102
 msgid "Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it."
 msgstr "Autrement, vous pouvez parcourir les thèmes mis en avant, populaires, ou les derniers en date. Lorsque vous avez trouvé un thème qui vous plaît, vous pouvez le prévisualiser ou l&rsquo;installer."
-
-#. translators: %d: Number of themes.
-#: wp-admin/themes.php:234 wp-admin/theme-install.php:67
-msgid "Number of Themes found: %d"
-msgstr "Nombre de thèmes trouvés&nbsp;: %d"
 
 #: wp-admin/themes.php:137
 msgid "The search for installed themes will search for terms in their name, description, author, or tag."
@@ -6657,9 +6652,10 @@ msgstr "La recherche parmi les thèmes installés se fait sur leurs noms, leurs 
 msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter."
 msgstr "Vous pouvez chercher un thème par mot-clé, auteur ou étiquette, ou faire une recherche plus précise en utilisant les critères définis dans le filtre de fonctionnalités."
 
-#: wp-admin/options-general.php:371
-msgid "Custom time format:"
-msgstr "Format d&rsquo;heure personnalisé&nbsp;:"
+#. translators: %d: Number of themes.
+#: wp-admin/themes.php:234 wp-admin/theme-install.php:67
+msgid "Number of Themes found: %d"
+msgstr "Nombre de thèmes trouvés : %d"
 
 #: wp-admin/options-general.php:370
 msgid "enter a custom time format in the following field"
@@ -6672,6 +6668,10 @@ msgstr "Format de date personnalisé&nbsp;:"
 #: wp-admin/options-general.php:333
 msgid "enter a custom date format in the following field"
 msgstr "saisissez un format de date personnalisé dans le champ suivant"
+
+#: wp-admin/options-general.php:371
+msgid "Custom time format:"
+msgstr "Format d’heure personnalisé :"
 
 #: wp-admin/includes/class-plugin-upgrader.php:66
 msgid "Plugins updated successfully."
@@ -8485,13 +8485,13 @@ msgstr "En changeant de thèmes, il y a souvent des variations sur le nombre et 
 msgid "<strong>Parent</strong> &mdash; Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have child categories for Bebop and Big Band. Totally optional. To create a subcategory, just choose another category from the Parent dropdown."
 msgstr "<strong>Parent</strong> &mdash; Les catégories, contrairement aux étiquettes, peuvent avoir une hiérarchie. Vous pouvez avoir une catégorie nommée « Jazz », et à l’intérieur, plusieurs catégories comme « Bebop » et « Big Band ». Le fait d’avoir une hiérarchie est totalement facultatif. Pour créer une sous-catégorie, choisissez une autre catégorie depuis la liste déroulante « Parente » ."
 
-#: wp-admin/includes/class-custom-image-header.php:128
-msgid "Don&#8217;t forget to click &#8220;Save Changes&#8221; when you&#8217;re done!"
-msgstr "N’oubliez pas de cliquer sur « Enregistrer les modifications » quand vous avez terminé !"
-
 #: wp-admin/edit-form-advanced.php:280
 msgid "The title field and the big Post Editing Area are fixed in place, but you can reposition all the other boxes using drag and drop. You can also minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
 msgstr "Le champ du titre et la zone d’édition de la publication sont inamovibles, mais vous pouvez déplacer toutes les autres sections par simple glisser/déposer. Vous pouvez également les fermer ou les ouvrir en cliquant sur la barre de titre de chaque section. Utilisez l’onglet « Options de l’écran » pour masquer d’autres sections (Extrait, Envoyer des rétroliens, Champs personnalisés, Commentaires, Slug, Auteur) ou pour choisir un affichage sur une ou deux colonnes pour cet écran."
+
+#: wp-admin/includes/class-custom-image-header.php:128
+msgid "Don&#8217;t forget to click &#8220;Save Changes&#8221; when you&#8217;re done!"
+msgstr "N’oubliez pas de cliquer sur « Enregistrer les modifications » quand vous avez terminé !"
 
 #: wp-admin/includes/class-custom-background.php:91
 msgid "To use a background image, simply upload it or choose an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button. You can display a single instance of your image, or tile it to fill the screen. You can have your background fixed in place, so your site content moves on top of it, or you can have it scroll with your site."
@@ -8532,13 +8532,13 @@ msgstr "Choisir une image d&rsquo;arrière-plan"
 msgid "Choose a Custom Header"
 msgstr "Choisir un en-tête personnalisé"
 
-#: wp-admin/includes/class-custom-background.php:92
-msgid "You can also choose a background color by clicking the Select Color button and either typing in a legitimate HTML hex value, e.g. &#8220;#ff0000&#8221; for red, or by choosing a color using the color picker."
-msgstr "Vous pouvez également choisir une couleur pour ce texte en cliquant sur le bouton de sélection de couleur ou en saisissant une valeur HTML valide (exemple : « #ff0000 » pour du rouge) ou en utilisant la palette de couleurs."
-
 #: wp-admin/includes/class-custom-image-header.php:127
 msgid "In the Header Text section of this page, you can choose whether to display this text or hide it. You can also choose a color for the text by clicking the Select Color button and either typing in a legitimate HTML hex value, e.g. &#8220;#ff0000&#8221; for red, or by choosing a color using the color picker."
 msgstr "Dans la section « Texte d’en-tête » de cette page, vous pouvez choisir d’afficher ce texte ou de le masquer. Vous pouvez également choisir une couleur pour ce texte en cliquant sur le bouton « Sélecteur de couleur » et soit en saisissant une valeur HTML valide (ex. : « #ff0000 » pour du rouge) ou en cliquant sur le sélecteur de couleur."
+
+#: wp-admin/includes/class-custom-background.php:92
+msgid "You can also choose a background color by clicking the Select Color button and either typing in a legitimate HTML hex value, e.g. &#8220;#ff0000&#8221; for red, or by choosing a color using the color picker."
+msgstr "Vous pouvez également choisir une couleur pour ce texte en cliquant sur le bouton de sélection de couleur ou en saisissant une valeur HTML valide (exemple : « #ff0000 » pour du rouge) ou en utilisant la palette de couleurs."
 
 #: wp-admin/options-reading.php:44
 msgid "You can choose whether or not your site will be crawled by robots, ping services, and spiders. If you want those services to ignore your site, click the checkbox next to &#8220;Discourage search engines from indexing this site&#8221; and click the Save Changes button at the bottom of the screen. Note that your privacy is not complete; your site is still visible on the web."
@@ -8643,6 +8643,10 @@ msgstr "Si vous voulez installer une extension que vous avez téléchargée depu
 msgid "You can also browse a user&#8217;s favorite plugins, by using the Favorites link above the plugins list and entering their WordPress.org username."
 msgstr "Vous pouvez voir les extensions favorites d’un utilisateur en utilisant le lien «&nbsp;Favorites&nbsp;» situé en haut à gauche de l’écran, et en renseignant son identifiant WordPress.org."
 
+#: wp-admin/plugin-install.php:100
+msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
+msgstr "Si vous savez ce que vous voulez, commencez par le champ «&nbsp;Recherche&nbsp;»&nbsp;: il vous permet de lancer une recherche sur le dépôt d’extensions de WordPress.org, pour un terme, un auteur, ou une étiquette en particulier. Vous pouvez également lancer une recherche en cliquant sur une des étiquettes populaires. Plus une étiquette est grande, plus elle  fait référence à un grand nombre d’extensions."
+
 #: wp-admin/options-reading.php:182 wp-admin/install.php:190
 msgid "Allow search engines to index this site"
 msgstr "Autoriser les moteurs de recherche à indexer ce site"
@@ -8651,10 +8655,6 @@ msgstr "Autoriser les moteurs de recherche à indexer ce site"
 #: wp-admin/includes/update-core.php:1438 wp-admin/update-core.php:733
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Bienvenue sur WordPress %1$s. Vous allez être redirigé vers l’écran « À propos » de WordPress. Si ce n’est pas le cas, cliquez <a href=\"%2$s\">ici</a>."
-
-#: wp-admin/plugin-install.php:100
-msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
-msgstr "Si vous savez ce que vous voulez, commencez par le champ «&nbsp;Recherche&nbsp;»&nbsp;: il vous permet de lancer une recherche sur le dépôt d’extensions de WordPress.org, pour un terme, un auteur, ou une étiquette en particulier. Vous pouvez également lancer une recherche en cliquant sur une des étiquettes populaires. Plus une étiquette est grande, plus elle  fait référence à un grand nombre d’extensions."
 
 #: wp-admin/includes/plugin-install.php:378 wp-admin/theme-install.php:202
 msgid "Get Favorites"
@@ -8772,14 +8772,14 @@ msgstr "Aller au contenu principal"
 msgid "You can select an image to be shown at the top of your site by uploading from your computer or choosing from your media library. After selecting an image you will be able to crop it."
 msgstr "Vous pouvez choisir une image d&rsquo;en-tête personnalisée en la téléversant depuis votre ordinateur ou en la choisissant dans votre bibliothèque de médias. Après avoir sélectionné l’image, vous pourrez la recadrer."
 
-#: wp-admin/edit-form-advanced.php:322
-msgid "Creating a Page is very similar to creating a Post, and the screens can be customized in the same way using drag and drop, the Screen Options tab, and expanding/collapsing boxes as you choose. This screen also has the distraction-free writing space, available in both the Visual and Text modes via the Fullscreen buttons. The Page editor mostly works the same as the Post editor, but there are some Page-specific features in the Page Attributes box."
-msgstr "Le processus de création d&rsquo;une page reste très proche de celui d&rsquo;un article, et les écrans respectifs peuvent être personnalisés de la même manière, par le biais de glisser/déposer, de l&rsquo;onglet &laquo;&nbsp;Option de l&rsquo;Écran&nbsp;&raquo;, et en ouvrant/fermant les blocs selon vos besoins. Cet écran dispose également du mode &laquo;&nbsp;aucune distraction&nbsp;&raquo;, tant dans le mode Visuel que dans le mode Texte, via les boutons &laquo;&nbsp;Plein Écran&nbsp;&raquo;. L&rsquo;éditeur de page fonctionne globalement comme celui des articles, mais dispose de certaines spécificités, disponibles dans le bloc &laquo;&nbsp;Attributs de Page&nbsp;&raquo;&nbsp;:"
-
 #. translators: %s: URL to Categories to Tags Converter tool.
 #: wp-admin/edit-tags.php:622
 msgid "Tags can be selectively converted to categories using the <a href=\"%s\">tag to category converter</a>."
 msgstr "Les étiquettes peuvent être converties de manière sélective en catégories via le <a href=\"%s\">convertisseur étiquettes vers catégories</a>"
+
+#: wp-admin/edit-form-advanced.php:322
+msgid "Creating a Page is very similar to creating a Post, and the screens can be customized in the same way using drag and drop, the Screen Options tab, and expanding/collapsing boxes as you choose. This screen also has the distraction-free writing space, available in both the Visual and Text modes via the Fullscreen buttons. The Page editor mostly works the same as the Post editor, but there are some Page-specific features in the Page Attributes box."
+msgstr "Le processus de création d&rsquo;une page reste très proche de celui d&rsquo;un article, et les écrans respectifs peuvent être personnalisés de la même manière, par le biais de glisser/déposer, de l&rsquo;onglet &laquo;&nbsp;Option de l&rsquo;Écran&nbsp;&raquo;, et en ouvrant/fermant les blocs selon vos besoins. Cet écran dispose également du mode &laquo;&nbsp;aucune distraction&nbsp;&raquo;, tant dans le mode Visuel que dans le mode Texte, via les boutons &laquo;&nbsp;Plein Écran&nbsp;&raquo;. L&rsquo;éditeur de page fonctionne globalement comme celui des articles, mais dispose de certaines spécificités, disponibles dans le bloc &laquo;&nbsp;Attributs de Page&nbsp;&raquo;&nbsp;:"
 
 #: wp-admin/includes/class-custom-image-header.php:109
 msgid "You can set a custom image header for your site. Simply upload the image and crop it, and the new header will go live immediately. Alternatively, you can use an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button."
@@ -8848,13 +8848,13 @@ msgstr "Vous utilisez l’outil de téléversement du navigateur. Le nouvel outi
 msgid "Preview %s"
 msgstr "Aperçu de %s"
 
-#: wp-admin/tools.php:48
-msgid "Categories have hierarchy, meaning that you can nest sub-categories. Tags do not have hierarchy and cannot be nested. Sometimes people start out using one on their posts, then later realize that the other would work better for their content."
-msgstr "Les catégories disposent d&rsquo;une hiérarchie, ce qui signifie que vous pouvez leur donner des sous-catégories. Les étiquettes n&rsquo;ont pas de hiérarchie et ne peuvent être imbriqués. Parfois, des auteurs commencent par utiliser une sorte de caractérisation, pour se rendre compte par la suite qu&rsquo;ils préfèrent l&rsquo;autre."
-
 #: wp-admin/tools.php:49
 msgid "The Categories and Tags Converter link on this screen will take you to the Import screen, where that Converter is one of the plugins you can install. Once that plugin is installed, the Activate Plugin &amp; Run Importer link will take you to a screen where you can choose to convert tags into categories or vice versa."
 msgstr "Le lien &laquo;&nbsp;convertisseur de catégories et étiquettes&nbsp;&raquo; vous mènera à la page d&rsquo;import, où ledit convertisseur est l&rsquo;une des extensions que vous pouvez installer. Une fois installée, le lien &laquo;&nbsp;Activer l&rsquo;extension & lancer l&rsquo;importateur&nbsp;&raquo; vous mènera à l&rsquo;écran d&rsquo;où vous pourrez choisir de lancer une conversion dans un sens ou dans l&rsquo;autre."
+
+#: wp-admin/tools.php:48
+msgid "Categories have hierarchy, meaning that you can nest sub-categories. Tags do not have hierarchy and cannot be nested. Sometimes people start out using one on their posts, then later realize that the other would work better for their content."
+msgstr "Les catégories disposent d&rsquo;une hiérarchie, ce qui signifie que vous pouvez leur donner des sous-catégories. Les étiquettes n&rsquo;ont pas de hiérarchie et ne peuvent être imbriqués. Parfois, des auteurs commencent par utiliser une sorte de caractérisation, pour se rendre compte par la suite qu&rsquo;ils préfèrent l&rsquo;autre."
 
 #: wp-admin/includes/class-custom-image-header.php:99
 msgid "This screen is used to customize the header section of your theme."
@@ -10056,6 +10056,10 @@ msgstr "Extensions %s"
 msgid "Delete Site"
 msgstr "Supprimer le site"
 
+#: wp-admin/includes/ms.php:987 wp-admin/users.php:345
+msgid "Confirm Deletion"
+msgstr "Confirmer cette action"
+
 #: wp-admin/includes/class-wp-links-list-table.php:88
 #: wp-admin/includes/class-wp-links-list-table.php:334
 #: wp-admin/includes/class-wp-themes-list-table.php:233
@@ -10080,17 +10084,6 @@ msgstr "Supprimer le site"
 #: wp-admin/includes/class-wp-ms-users-list-table.php:514
 msgid "Delete"
 msgstr "Supprimer"
-
-#: wp-admin/includes/ms.php:987 wp-admin/users.php:345
-msgid "Confirm Deletion"
-msgstr "Confirmer cette action"
-
-#. translators: %s: Number of plugins.
-#: wp-admin/includes/class-wp-plugins-list-table.php:555
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "Mise à jour disponible <span class=\"count\">(%s)</span>"
-msgstr[1] "Mises à jour disponibles <span class=\"count\">(%s)</span>"
 
 #: wp-admin/options-reading.php:50 wp-admin/edit-tags.php:304
 #: wp-admin/link-manager.php:77 wp-admin/options-writing.php:51
@@ -10118,6 +10111,13 @@ msgstr[1] "Mises à jour disponibles <span class=\"count\">(%s)</span>"
 #: wp-admin/network/settings.php:62 wp-admin/network/sites.php:44
 msgid "For more information:"
 msgstr "Plus d'informations&nbsp;:"
+
+#. translators: %s: Number of plugins.
+#: wp-admin/includes/class-wp-plugins-list-table.php:555
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Mise à jour disponible <span class=\"count\">(%s)</span>"
+msgstr[1] "Mises à jour disponibles <span class=\"count\">(%s)</span>"
 
 #: wp-admin/my-sites.php:58 wp-admin/options-head.php:15
 #: wp-admin/options.php:335 wp-admin/network/settings.php:141
@@ -11075,13 +11075,13 @@ msgstr "<strong>Description</strong> &mdash; La description n&rsquo;est pas trè
 msgid "You can change the display of this screen using the Screen Options tab to set how many items are displayed per screen and to display/hide columns in the table."
 msgstr "Vous pouvez modifier l&rsquo;affichage de cet écran via l&rsquo;onglet &laquo;&nbsp;Options de l&rsquo;écran&nbsp;&raquo;, afin de définir le nombre d&rsquo;éléments à afficher par écran, et afficher/masquer les colonnes du tableau."
 
-#: wp-admin/edit-tags.php:262
-msgid "What&#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index."
-msgstr "Quelle est la différence entre les catégories et les étiquettes&nbsp;? Normalement, les étiquettes identifient les informations importantes dans votre article (noms, sujets, etc.) qui seraient susceptibles de revenir dans d&rsquo;autres articles, ou pas. De leur côté, les catégories ont des sections prédéterminées. Si vous voyez votre site comme un livre, alors les catégories sont la table des matières, et les étiquettes forment l&rsquo;index."
-
 #: wp-admin/edit-tags.php:277
 msgid "When adding a new tag on this screen, you&#8217;ll fill in the following fields:"
 msgstr "Quand vous ajoutez une nouvelle étiquette via cet écran, vous devez remplir les champs suivants&nbsp;:"
+
+#: wp-admin/edit-tags.php:262
+msgid "What&#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index."
+msgstr "Quelle est la différence entre les catégories et les étiquettes&nbsp;? Normalement, les étiquettes identifient les informations importantes dans votre article (noms, sujets, etc.) qui seraient susceptibles de revenir dans d&rsquo;autres articles, ou pas. De leur côté, les catégories ont des sections prédéterminées. Si vous voyez votre site comme un livre, alors les catégories sont la table des matières, et les étiquettes forment l&rsquo;index."
 
 #: wp-admin/includes/class-custom-image-header.php:660
 msgid "Default Images"
@@ -12926,6 +12926,10 @@ msgstr "Texte complet"
 msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be put in the Trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
 msgstr "Lorsqu’un commentaire contient l’un de ces mots dans son contenu, son nom, son URL, son adresse courriel son adresse IP ou encore la chaîne d’agent utilisateur du navigateur, il sera mis à la corbeille. Un seul mot ou une seule adresse IP par ligne. Cette fonction reconnaît l’intérieur des mots, donc « press » suffira pour reconnaître « WordPress »."
 
+#: wp-admin/options-discussion.php:200
+msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Lorsqu’un commentaire contient l’un de ces mots dans son contenu, son nom, son URL, son adresse courriel, son adresse IP ou encore la chaîne d’agent utilisateur du navigateur, il sera retenu dans la <a href=\"edit-comments.php?comment_status=moderated\">file de modération</a>. Un seul mot ou une seule adresse IP par ligne. Cette fonction reconnaît l’intérieur des mots, donc « press » suffira pour reconnaître « WordPress »."
+
 #. translators: %s: URL to "Fixing WordPress" forum.
 #: wp-admin/maint/repair.php:146
 msgid "Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href=\"%s\">WordPress support forums</a> to get additional assistance."
@@ -12938,10 +12942,6 @@ msgstr "Ce thème est déjà installé."
 #: wp-admin/includes/theme-install.php:182
 msgid "If you have a theme in a .zip format, you may install or update it by uploading it here."
 msgstr "Si vous avez un thème au format .zip, vous pouvez l’installer en le téléversant ici."
-
-#: wp-admin/options-discussion.php:200
-msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Lorsqu’un commentaire contient l’un de ces mots dans son contenu, son nom, son URL, son adresse courriel, son adresse IP ou encore la chaîne d’agent utilisateur du navigateur, il sera retenu dans la <a href=\"edit-comments.php?comment_status=moderated\">file de modération</a>. Un seul mot ou une seule adresse IP par ligne. Cette fonction reconnaît l’intérieur des mots, donc « press » suffira pour reconnaître « WordPress »."
 
 #: wp-admin/comment.php:143
 msgid "You are about to approve the following comment:"
