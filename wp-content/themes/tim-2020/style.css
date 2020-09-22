@@ -966,6 +966,11 @@ a {
   color: darkred;
 }
 
+.page-title {
+  background-color: lightseagreen;
+  color: darkred;
+}
+
 h2 {
   margin: 0;
   padding: 0;
