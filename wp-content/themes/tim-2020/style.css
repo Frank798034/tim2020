@@ -937,18 +937,36 @@ textarea {
 }
 
 .site-title {
-  font-size: 8em;
+  margin-top: 0;
+  padding-top: 0;
+  text-decoration: none;
+  font-size: 4em;
 }
 
 header {
   background-color: orangered;
 }
 
-/*.page-title {
-    $color: royalblue;
-    background-color: $color;
-}*/
+.site-branding {
+  background-color: blue;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  background-color: green;
+}
+
 body {
   background-color: pink;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */
