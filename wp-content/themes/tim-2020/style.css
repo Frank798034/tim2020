@@ -943,10 +943,6 @@ textarea {
   font-size: 10em;
 }
 
-a {
-  text-decoration: none;
-}
-
 header {
   background-color: darkseagreen;
 }
@@ -963,6 +959,11 @@ header {
 
 body {
   background-color: blanchedalmond;
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
 }
 
 footer {
