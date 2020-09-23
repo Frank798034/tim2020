@@ -964,6 +964,7 @@ body {
 a {
   text-decoration: none;
   color: darkred;
+  font-style: italic;
 }
 
 .page-title {
